@@ -6,23 +6,23 @@ import Grid from "@mui/material/Grid";
 type Props = {};
  const Row = () => {
   return(<Grid container direction="row" justifyContent="center" alignItems="center"
-  sx={{margin:'20px 0'}}>
-    <Grid item xs={2}>
+  sx={{}}>
+    <Grid item xs sm={4} >
       <Item />
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs sm={4} >
       <Item />
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs sm={4} >
       <Item />
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs sm={4} >
       <Item />
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs sm={4}>
       <Item />
     </Grid>
-    <Grid item xs={2}>
+    <Grid item xs sm={4} >
       <Item />
     </Grid>
   </Grid>)

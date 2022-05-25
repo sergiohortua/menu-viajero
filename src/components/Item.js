@@ -25,7 +25,7 @@ export default function MediaControlCard() {
 
   return (
     <Button
-      sx={{ "&.MuiButton-root": { padding: "0px 0px" } }}
+      sx={{margin:'20px', "&.MuiButton-root": { padding: "0px 0px" } }}
       onClick={handleOpenDialog}
     >
       <Card
