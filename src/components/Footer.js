@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
     <div className="App">
       <footer className="App-footer">
         <h3>Bogotá-Colombia </h3>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=3125058310" >
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=573125058310" >
           <WhatsAppIcon color='success' />
         </a>
       </footer>
