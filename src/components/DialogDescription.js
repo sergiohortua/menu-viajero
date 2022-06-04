@@ -10,18 +10,17 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 export default function DialogDescription(props: Props) {
-  const { open, data } = props;
-
+  const { open, item } = props;
+console.log(item);
   return (
     <Dialog fullWidth maxWidth={"sm"} open={open}>
-      <DialogTitle>{data.title}</DialogTitle>
+      <DialogTitle>{item.title}</DialogTitle>
       <DialogContent>
         <Grid container>
           <Grid
             item
             xs={3}
             sx={{
-              border: "1px solid red",
               display: "flex",
               justifyContent: "center",
             }}
@@ -29,16 +28,15 @@ export default function DialogDescription(props: Props) {
             <CardMedia
               component="img"
               sx={{
-                width: '62px',
+                width: '120px',
                 height: '250px',
                 borderRadius: "5px",
               }}
-              image={data.image}
+              image={item.image}
               alt="Descripcion"
             />
           </Grid>
           <Grid item xs={9} sx={{
-              border: "1px solid red",
               display: "flex",
               justifyContent: "center",
             }}>
@@ -52,7 +50,6 @@ export default function DialogDescription(props: Props) {
             >
               <div
                 style={{
-                  border: "1px solid blue",
                   // overflow: "hidden",
                   // maxWidth: "155px",
                   // height: "80px",
@@ -70,7 +67,7 @@ export default function DialogDescription(props: Props) {
                   variant="subtitle1"
                   align={"center"}
                 >
-                  {data.description}
+                  {item.description}
                 </Typography>
               </div>
               <Typography
@@ -79,7 +76,7 @@ export default function DialogDescription(props: Props) {
                 color="text.secondary"
                 component="div"
               >
-                {data.price}
+                {item.price}
               </Typography>
             </CardContent>
           </Grid>

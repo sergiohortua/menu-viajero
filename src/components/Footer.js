@@ -1,17 +1,19 @@
 // @flow
-import * as React from 'react';
-import '../assets/components/Footer.css';
+import * as React from "react";
+import "../assets/components/Footer.css";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
-type Props = {
-  
-};
-const Footer=(props: Props) =>{
+type Props = {};
+const Footer = (props: Props) => {
   return (
     <div className="App">
-      <header className="App-header">
-    
-      </header>
+      <footer className="App-footer">
+        <h3>Bogotá-Colombia </h3>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+57 3125058310" >
+          <WhatsAppIcon color='success' />
+        </a>
+      </footer>
     </div>
   );
 };
-export default Footer
+export default Footer;
