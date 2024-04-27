@@ -1,3 +1,6 @@
+# Visit it at the github pages url
+  https://sergiohortua.github.io/menu-viajero/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
